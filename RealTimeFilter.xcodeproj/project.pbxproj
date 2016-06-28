@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA2DBAD81D2273B500AD43A4 /* fragment.shader in Resources */ = {isa = PBXBuildFile; fileRef = AA2DBAD61D2273B400AD43A4 /* fragment.shader */; };
+		AA2DBAD91D2273B500AD43A4 /* vertex.shader in Resources */ = {isa = PBXBuildFile; fileRef = AA2DBAD71D2273B400AD43A4 /* vertex.shader */; };
+		AA2DBADB1D2273CA00AD43A4 /* tex1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA2DBADA1D2273CA00AD43A4 /* tex1.jpg */; };
 		D67CFB571C30E6FA005AE284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D67CFB561C30E6FA005AE284 /* main.m */; };
 		D67CFB5A1C30E6FA005AE284 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D67CFB591C30E6FA005AE284 /* AppDelegate.m */; };
 		D67CFB5D1C30E6FA005AE284 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67CFB5C1C30E6FA005AE284 /* ViewController.m */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA2DBAD61D2273B400AD43A4 /* fragment.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.shader; sourceTree = "<group>"; };
+		AA2DBAD71D2273B400AD43A4 /* vertex.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.shader; sourceTree = "<group>"; };
+		AA2DBADA1D2273CA00AD43A4 /* tex1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex1.jpg; sourceTree = "<group>"; };
 		D67CFB521C30E6FA005AE284 /* RealTimeFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67CFB561C30E6FA005AE284 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D67CFB581C30E6FA005AE284 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		D67CFB491C30E6FA005AE284 = {
 			isa = PBXGroup;
 			children = (
+				AA2DBAD61D2273B400AD43A4 /* fragment.shader */,
+				AA2DBAD71D2273B400AD43A4 /* vertex.shader */,
 				D67CFB8F1C30EB6D005AE284 /* OpenGLES.framework */,
 				D67CFB8D1C30E853005AE284 /* AVFoundation.framework */,
 				D67CFB8B1C30E84C005AE284 /* CoreImage.framework */,
@@ -115,6 +123,7 @@
 		D67CFB541C30E6FA005AE284 /* RealTimeFilter */ = {
 			isa = PBXGroup;
 			children = (
+				AA2DBADA1D2273CA00AD43A4 /* tex1.jpg */,
 				D67CFB581C30E6FA005AE284 /* AppDelegate.h */,
 				D67CFB591C30E6FA005AE284 /* AppDelegate.m */,
 				D67CFB5B1C30E6FA005AE284 /* ViewController.h */,
@@ -222,7 +231,7 @@
 				TargetAttributes = {
 					D67CFB511C30E6FA005AE284 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 9UQ4BP42V9;
+						DevelopmentTeam = 43BU8994JN;
 					};
 					D67CFB6D1C30E6FA005AE284 = {
 						CreatedOnToolsVersion = 7.1;
@@ -261,8 +270,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2DBAD81D2273B500AD43A4 /* fragment.shader in Resources */,
+				AA2DBADB1D2273CA00AD43A4 /* tex1.jpg in Resources */,
 				D67CFB681C30E6FA005AE284 /* LaunchScreen.storyboard in Resources */,
 				D67CFB651C30E6FA005AE284 /* Assets.xcassets in Resources */,
+				AA2DBAD91D2273B500AD43A4 /* vertex.shader in Resources */,
 				D67CFB601C30E6FA005AE284 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,10 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RealTimeFilter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Victor.RealTimeFilter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomeelee.RealTimeFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -442,10 +455,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RealTimeFilter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Victor.RealTimeFilter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zomeelee.RealTimeFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -517,6 +531,7 @@
 				D67CFB841C30E6FA005AE284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67CFB851C30E6FA005AE284 /* Build configuration list for PBXNativeTarget "RealTimeFilterTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +540,7 @@
 				D67CFB871C30E6FA005AE284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67CFB881C30E6FA005AE284 /* Build configuration list for PBXNativeTarget "RealTimeFilterUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +549,7 @@
 				D67CFB8A1C30E6FA005AE284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
